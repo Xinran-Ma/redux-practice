@@ -16,15 +16,15 @@ const reducer = (state = initialState, action) => {
         }
     }
     if (action.type === 'ADD') {
-        console.log('[ADD 5]')
+        console.log('[ADD]')
         return {
-            counter: state.counter + 5
+            counter: state.counter + action.value
         }
     }
     if (action.type === 'SUBTRACT') {
-        console.log('[SUBTRACT 5]')
+        console.log('[SUBTRACT]')
         return {
-            counter: state.counter - 5
+            counter: state.counter - action.value
         }
     }
     return state;
